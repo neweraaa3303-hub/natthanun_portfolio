@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natthanun Punumpai - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+  h2 {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 250px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;        /* กำหนดความสูงเท่ากัน */
+  object-fit: cover;   /* ครอปรูปให้พอดี ไม่ยืด */
+  border-radius: 8px;
+}
+
+.desc {
+  margin-top: 8px;
+}
+
+  </style>
+</head>
+
+<body class="light-mode">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Natthanun<span>.PYT</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">หน้าแรก</a></li>
+          <li><a href="#about">เกี่ยวกับ</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#projects">โปรเจกต์</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+      <div class="menu-toggle">
+        <button id="menu-toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2>สวัสดี, ผมชื่อ <span>ณัฐนันท์ พันธุ์อำไพ</span></h2>
+          <h3>นักศึกษาระดับชั้นประกาศนียบัตรวิชาชีพชั้นสูงปีที่ 1</h3>
+          <p>สาขาเทคโนโลยีสารสนเทศ วิทยาลัยเทคโนโลยีพายัพและบริหารธุรกิจ</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">ดูผลงาน</a>
+            <a href="#contact" class="btn btn-outline">ติดต่อ</a>
+          </div>
+      
+        </div>
+        <div class="hero-image">
+          <img src="images/pfpme.png" alt="Natthanun Punumpai">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">เกี่ยวกับฉัน</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>นักศึกษาฝึกประสบการณ์ ผู้มีความชำนาญด้านการเพิ่ม ลบ แก้ไข จัดเรียงลำดับบนโปรแกรม Excel ได้เป็นอย่างดี</p>
+            <p>อีกทั้งยังสามารถจัดการ แก้ไข และดูแลอุปกรณ์เทคโนโลยีสารสนเทศ(IT Support/Maintenance)</p>
+            <div class="about-info">
+              <div class="info-item">
+                <h4>ประสบการณ์ฝึกงาน:</h4>
+                <p>3 เดือน</p>
+              </div>
+              <div class="info-item">
+                <h4>งานปัจจุบัน:</h4>
+                <p>นักศึกษาวิทยาลัยเทคโนโลยีพายัพและบริหารธุรกิจ</p>
+              </div>
+              <div class="info-item">
+                <h4>การศึกษา:</h4>
+                <p>เทคโนโลยีสารสนเทศ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">ทักษะและความเชี่ยวชาญ</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>การพัฒนาเว็บแอปพลิเคชัน</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-php"></i></div>
+                <h4>PHP</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h4>JavaScript</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h4>HTML5</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h4>CSS3</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>เครื่องมือและเทคโนโลยี</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h4>MySQL</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <h4>Excel</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h4>Figma</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                <h4>UI/UX Design</h4>
+                <div class="skill-progress">
+                  <div class="progress" style="width: 75%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">โปรเจกต์ที่โดดเด่น</h2>
+       
+        <div class="projects-grid">
+          <div class="project-card" data-category="other">
+  <div class="project-img">
+    <img src="images/mywb2.png" alt="Freelance Website">
+  </div>
+  <div class="project-content">
+    <h3>เว็บไซต์ค้นหาฟรีแลนซ์</h3>
+    <p>
+      ค้นหาฟรีแลนซ์ที่คุณต้องการ มองหาผลงานที่จะทำให้คุณพึงพอใจ
+    </p>
+    <div class="project-tags">
+      <span>Website</span>
+    
+    </div>
+    <div class="project-links">
+      <a href="https://www.canva.com/design/DAGuuG61JoM/-99M33R4NulxvrlUAM0CGg/view?utm_content=DAGuuG61JoM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcc64032316" title="ดูตัวอย่าง Website">
+        <i class="fas fa-file-excel"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+          <div class="project-card" data-category="webapp">
+            <div class="project-img">
+              <img src="images/mywb.png" alt="Inventory System">
+            </div>
+            <div class="project-content">
+              <h3>แบบจำลองเว็บไซต์ธุรกิจ</h3>
+              <p>เติมเกมราคาสบายกระเป๋าผ่านเว็บไซต์ของเรา</p>
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1p3nqTE-KwRob7WVKYAtiC4cOkhaJo87K/view" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="webapp">
+            <div class="project-img">
+              <img src="" alt="">
+            </div>
+            <div class="project-content">
+              <h3>Sensor Shield Locker</h3>
+              <p>ตู้ล็อคเกอร์อัจฉริยะ</p>
+              <div class="project-tags">
+                <span>C++</span>
+                <span>Arduino</span>
+                <span>Hardware</span>
+              </div>
+             
+            </div>
+          </div>
+         
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2>กิจกรรมที่เคยเข้าร่วม</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+    <img src="images/ng1.jpg" alt="event1">
+  </a>
+  <div class="desc">SKILL EXPO ครั้งทีหนึ่ง</div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/ng2.jpg" alt="event2">
+  </a>
+  <div class="desc">SKILL EXPO ครั้งที่สอง</div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/ng3.jpg" alt="event3">
+  </a>
+  <div class="desc">อบรมก่อนฝึกประสบการณ์วิชาชีพ</div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/ng4.jpg" alt="event4">
+  </a>
+  <div class="desc">ทัศนศึกษาสำนักงานประชาสัมพันธ์</div>
+</div>
+
+</div>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">ติดต่อฉัน</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>อีเมล</h3>
+                <p>contact@natthanun26@yahoo.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-facebook-f"></i>
+
+              </div>
+              <div class="contact-text">
+                <h3>Facebook</h3>
+                <p><a href="https://www.facebook.com/natthanun.punumpai" target="_blank">facebook.com/natthanun.punumpai</a></p>
+              </div>
+            </div>
+          
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">ชื่อ</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">หัวข้อ</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">ข้อความ</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Natthanun<span>.PYT</span></h2>
+          <p>นักศึกษาฝึกประสบการณ์</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/natthanun.punumpai" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.payaptechno.ac.th/" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Natthanun Punumpai. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
